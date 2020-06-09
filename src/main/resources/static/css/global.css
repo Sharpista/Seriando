@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Nunito&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased !important;
+  background-color: #282828;
+}
+
+button {
+  cursor: pointer;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+----------------- INDEX -------------
+
+:root {
+  --pink-color-seriando:#FE5F7C;
+}
+
+.container {
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links ul li {
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  text-transform: lowercase;
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav-links .login:hover {
+  color: var(--pink-color-seriando);
+  cursor: pointer;
+}
+
+.nav-links ul li + li {
+  margin: 0 50px 0 50px;
+}
+
+.nav-links ul li:last-child { 
+  padding: 5px 10px 5px 10px;
+  border: 2px solid var(--pink-color-seriando);
+  cursor: pointer;
+}
+
+.nav-links ul li:last-child:hover {
+  border: 2px solid #b700ff;
+  transition: ease-in 0.8s;
+}
+
+.seriando-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.seriando-content img {
+  width: 600px;
+  margin-right: 20%;
+}
+
+.content {
+  position: relative;
+}
+.seriando-descricao {
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 64px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 60%;
+  right: -50%;
+}
+
+.pink-color {
+  color: var(--pink-color-seriando);
+  font-size: 96px;
+}
+
+.s-1 {
+  position: absolute;
+  top: 15%;
+  z-index: -1;
+}
+
+.s-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
